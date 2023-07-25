@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :tweets, only: :index
+  resources :protospaces, only: :index
 end
