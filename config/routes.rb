@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  resources :protospaces, only: :index
+  devise_for :users
+  root to: 'prototypes#index'
+  resources :prototypes, only: :index
 end
